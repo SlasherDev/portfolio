@@ -1,0 +1,188 @@
+[
+    {
+        "name": "Blackwell Academy",
+        "description": "site fictif pour l'université de Blackwell Academy, dans le jeu Life is Strange",
+        "urls":[
+            {
+                "github": "blackwell-academy"
+            },
+            {
+                "link": {
+                    "name": "Visiter le site",
+                    "url": "https://blackwell-academy.com"
+                }
+            }
+        ],
+        "technologies": [
+            {
+                "name": "HTML5",
+                "img": {
+                    "src": "html5.png",
+                    "alt": "HTML5"
+                }
+            },
+            {
+                "name": "CSS3",
+                "img": {
+                    "src": "css3.png",
+                    "alt": "CSS3"
+                }
+            },
+            {
+                "name": "JavaScript",
+                "img": {
+                    "src": "javascript.png",
+                    "alt": "JavaScript"
+                }
+            },
+            {
+                "name": "PHP",
+                "img": {
+                    "src": "php.png",
+                    "alt": "PHP"
+                }
+            },
+            {
+                "name": "Symfony",
+                "img": {
+                    "src": "symfony.png",
+                    "alt": "Symfony"
+                }
+            },
+            {
+                "name": "MySQL",
+                "img": {
+                    "src": "mysql.png",
+                    "alt": "MySQL"
+                }
+            }
+        ],
+        "logo": [
+            {
+                "src": "blackwell_academy.png",
+                "alt": "Blackwell Academy"
+            }
+        ],
+        "screens": [
+            "blackwell_academy_1.png",
+            "blackwell_academy_2.png",
+            "blackwell_academy_3.png"
+        ]
+    },
+    {
+        "name": "Pokedex",
+        "description": "Pokedex de Pokémon, avec une liste de Pokémon et leurs détails",
+        "urls":[
+            {
+                "github": "pokedex"
+            },
+            {
+                "link": [{
+                    "name": "Visiter le site",
+                    "url": "#"
+                },
+                {
+                    "name": null
+                }]
+            }
+        ],
+        "technologies": [
+            {
+                "name": "React Native",
+                "img": {
+                    "src": "react.png",
+                    "alt": "React Native"
+                }
+            }
+        ],
+        "logo": [
+            {
+                "src": "pokedex.png",
+                "alt": "Pokedex"
+            }
+        ],
+        "screens": [
+            "pokedex_1.png",
+            "pokedex_2.png",
+            "pokedex_3.png"
+        ]
+    },
+    {
+        "name": "Clow card discord bot",
+        "description": "Bot discord qui affiche les cartes de clow selon certains critères",
+        "urls":[
+            {
+                "github": "Clow_Card_bot"
+            },
+            {
+                "link": {
+                    "name": "Tester le bot sur discord",
+                    "url": "#"
+                }
+            }
+        ],
+        "technologies": [
+            {
+                "name": "nodejs",
+                "img": {
+                    "src": "nodejs.png",
+                    "alt": "Node.js"
+                }
+            },
+            {
+                "name": "JavaScript",
+                "img": {
+                    "src": "javascript.png",
+                    "alt": "JavaScript"
+                }
+            }
+        ],
+        "logo": [
+            {
+                "src": "clow_card.png",
+                "alt": "Clow card discord bot"
+            }
+        ],
+        "screens": [
+            "clow_card_1.png",
+            "clow_card_2.png",
+            "clow_card_3.png"
+        ]
+    },
+    {
+        "name": "Whatsub",
+        "description": "site de gestion des abonnements",
+        "urls":[
+            {
+                "github": "Watsub"
+            },
+            {
+                "link": {
+                    "name": "Visiter le site",
+                    "url": "#"
+                }
+            }
+        ],
+        "technologies": [
+            {
+                "name": "React",
+                "img": {
+                    "src": "react.png",
+                    "alt": "React"
+                }
+            }
+            
+        ],
+        "logo": [
+            {
+                "src": "whatsub.png",
+                "alt": "Whatsub"
+            }
+        ],
+        "screens": [
+            "whatsub_1.png",
+            "whatsub_2.png",
+            "whatsub_3.png"
+        ]
+    }
+]
