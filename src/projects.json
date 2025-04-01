@@ -284,24 +284,24 @@
         ],
         "logo": {
             "form":"square",
-            "src": "react_labs.png",
-            "alt": "React Labs"
+            "src": "react_lab.png",
+            "alt": "React Lab"
         },
         "screens": [
             {
-                "title": "React Labs 1",
-                "src": "react_labs_1.png",
-                "alt": "React Labs 1"
+                "title": "React Labs",
+                "src": "react_labs.png",
+                "alt": "React Labs"
             },
             {
-                "title": "React Labs 2",
-                "src": "react_labs_2.png",
-                "alt": "React Labs 2"
+                "title": "React Labs",
+                "src": "react_labs.png",
+                "alt": "React Labs"
             },
             {
-                "title": "React Labs 3",
-                "src": "react_labs_3.png",
-                "alt": "React Labs 3"
+                "title": "React Labs",
+                "src": "react_labs.png",
+                "alt": "React Labs"
             }
         ]
     }
