@@ -1,15 +1,19 @@
 [
     {
+        "id": "blackwell_academy",
         "name": "Blackwell Academy",
-        "description": "site fictif pour l'université de Blackwell Academy, dans le jeu Life is Strange",
-        "urls":[
+        "description": "Site fictif pour l'université de Blackwell Academy, dans le jeu Life is Strange.",
+        "urls": [
             {
-                "github": "blackwell-academy"
+                "github": {
+                    "description": "voir le depot github",
+                    "url": "blackwell-academy"
+                }
             },
             {
                 "link": {
-                    "name": "Visiter le site",
-                    "url": "https://blackwell-academy.com"
+                    "description": "Visiter le site",
+                    "url": null
                 }
             }
         ],
@@ -17,21 +21,21 @@
             {
                 "name": "HTML5",
                 "img": {
-                    "src": "html5.png",
+                    "src": "html.png",
                     "alt": "HTML5"
                 }
             },
             {
                 "name": "CSS3",
                 "img": {
-                    "src": "css3.png",
+                    "src": "css.png",
                     "alt": "CSS3"
                 }
             },
             {
                 "name": "JavaScript",
                 "img": {
-                    "src": "javascript.png",
+                    "src": "js.png",
                     "alt": "JavaScript"
                 }
             },
@@ -57,67 +61,94 @@
                 }
             }
         ],
-        "logo": [
-            {
-                "src": "blackwell_academy.png",
-                "alt": "Blackwell Academy"
-            }
-        ],
+        "logo": {
+            "form" : "square",
+            "src": "blackwell_academy.png",
+            "alt": "Blackwell Academy"
+        },
         "screens": [
-            "blackwell_academy_1.png",
-            "blackwell_academy_2.png",
-            "blackwell_academy_3.png"
+            {
+                "title": "Blackwell Academy 1",
+                "src": "blackwell_academy_1.png",
+                "alt": "Blackwell Academy 1"
+            },
+            {
+                "title": "Blackwell Academy 2",
+                "src": "blackwell_academy_2.png",
+                "alt": "Blackwell Academy 2"
+            },
+            {
+                "title": "Blackwell Academy 3",
+                "src": "blackwell_academy_3.png",
+                "alt": "Blackwell Academy 3"
+            }
         ]
     },
     {
+        "id": "pokedex",
         "name": "Pokedex",
-        "description": "Pokedex de Pokémon, avec une liste de Pokémon et leurs détails",
-        "urls":[
+        "description": "Pokedex de Pokémon, avec une liste de Pokémon et leurs détails.",
+        "urls": [
             {
-                "github": "pokedex"
+                "github": {
+                    "description": "voir le depot github",
+                    "url": "pokedex"
+                }
             },
             {
-                "link": [{
-                    "name": "Visiter le site",
-                    "url": "#"
-                },
-                {
-                    "name": null
-                }]
+                "link": {
+                    "description": "Telecharger l'application (APK)",
+                    "url": null
+                }
             }
         ],
         "technologies": [
             {
                 "name": "React Native",
                 "img": {
-                    "src": "react.png",
+                    "src": "react.svg",
                     "alt": "React Native"
                 }
             }
         ],
-        "logo": [
-            {
-                "src": "pokedex.png",
-                "alt": "Pokedex"
-            }
-        ],
+        "logo": {
+            "form":"square",
+            "src": "pokedex.png",
+            "alt": "Pokedex"
+        },
         "screens": [
-            "pokedex_1.png",
-            "pokedex_2.png",
-            "pokedex_3.png"
+            {
+                "title": "Pokedex 1",
+                "src": "pokedex_1.png",
+                "alt": "Pokedex 1"
+            },
+            {
+                "title": "Pokedex 2",
+                "src": "pokedex_2.png",
+                "alt": "Pokedex 2"
+            },
+            {
+                "title": "Pokedex 3",
+                "src": "pokedex_3.png",
+                "alt": "Pokedex 3"
+            }
         ]
     },
     {
+        "id": "clow_card_bot",
         "name": "Clow card discord bot",
-        "description": "Bot discord qui affiche les cartes de clow selon certains critères",
-        "urls":[
+        "description": "Bot discord qui affiche les cartes de clow selon certains critères.",
+        "urls": [
             {
-                "github": "Clow_Card_bot"
+                "github": {
+                    "description": "voir le depot github",
+                    "url": "clow-card-bot"
+                }
             },
             {
                 "link": {
-                    "name": "Tester le bot sur discord",
-                    "url": "#"
+                    "description": "Invite le bot sur ton serveur",
+                    "url": "https://discord.com/oauth2/authorize?client_id=564186305081114642&permissions=274877959168&integration_type=0&scope=bot"
                 }
             }
         ],
@@ -125,41 +156,56 @@
             {
                 "name": "nodejs",
                 "img": {
-                    "src": "nodejs.png",
+                    "src": "node.png",
                     "alt": "Node.js"
                 }
             },
             {
                 "name": "JavaScript",
                 "img": {
-                    "src": "javascript.png",
+                    "src": "js.png",
                     "alt": "JavaScript"
                 }
             }
         ],
-        "logo": [
-            {
-                "src": "clow_card.png",
-                "alt": "Clow card discord bot"
-            }
-        ],
+        "logo": {
+            "form": "round",
+            "src": "clow_card.png",
+            "alt": "Clow card discord bot"
+        },
         "screens": [
-            "clow_card_1.png",
-            "clow_card_2.png",
-            "clow_card_3.png"
+            {
+                "title": "Clow card discord bot 1",
+                "src": "clow_card_bot_1.png",
+                "alt": "Clow card discord bot 1"
+            },
+            {
+                "title": "Clow card discord bot 2",
+                "src": "clow_card_bot_2.png",
+                "alt": "Clow card discord bot 2"
+            },
+            {
+                "title": "Clow card discord bot 3",
+                "src": "clow_card_bot_3.png",
+                "alt": "Clow card discord bot 3"
+            }
         ]
     },
     {
+        "id": "whatsub",
         "name": "Whatsub",
-        "description": "site de gestion des abonnements",
-        "urls":[
+        "description": "Site de gestion des abonnements.",
+        "urls": [
             {
-                "github": "Watsub"
+                "github": {
+                    "description": "voir le depot github",
+                    "url": "whatsub"
+                }
             },
             {
                 "link": {
-                    "name": "Visiter le site",
-                    "url": "#"
+                    "description": "Visiter le site",
+                    "url": null
                 }
             }
         ],
@@ -167,22 +213,96 @@
             {
                 "name": "React",
                 "img": {
-                    "src": "react.png",
+                    "src": "react.svg",
                     "alt": "React"
                 }
-            }
-            
-        ],
-        "logo": [
+            },
             {
-                "src": "whatsub.png",
-                "alt": "Whatsub"
+                "name": "JavaScript",
+                "img": {
+                    "src": "js.png",
+                    "alt": "JavaScript"
+                }
             }
         ],
+        "logo": {
+            "form": "round",
+            "src": "whatsub.png",
+            "alt": "Whatsub"
+        },
         "screens": [
-            "whatsub_1.png",
-            "whatsub_2.png",
-            "whatsub_3.png"
+            {
+                "title": "Whatsub 1",
+                "src": "whatsub_1.png",
+                "alt": "Whatsub 1"
+            },
+            {
+                "title": "Whatsub 2",
+                "src": "whatsub_2.png",
+                "alt": "Whatsub 2"
+            },
+            {
+                "title": "Whatsub 3",
+                "src": "whatsub_3.png",
+                "alt": "Whatsub 3"
+            }
+        ]
+    },
+    {
+        "id": "react_labs",
+        "name": "react Labs",
+        "description": "Site pour experimenter React et ses fonctionnalités.",
+        "urls": [
+            {
+                "github": {
+                    "description": "voir le depot github",
+                    "url": null
+                }
+            },
+            {
+                "link": {
+                    "description": "Visiter le site",
+                    "url": null
+                }
+            }
+        ],
+        "technologies": [
+            {
+                "name": "React",
+                "img": {
+                    "src": "react.svg",
+                    "alt": "React"
+                }
+            },
+            {
+                "name": "JavaScript",
+                "img": {
+                    "src": "js.png",
+                    "alt": "JavaScript"
+                }
+            }
+        ],
+        "logo": {
+            "form":"square",
+            "src": "react_labs.png",
+            "alt": "React Labs"
+        },
+        "screens": [
+            {
+                "title": "React Labs 1",
+                "src": "react_labs_1.png",
+                "alt": "React Labs 1"
+            },
+            {
+                "title": "React Labs 2",
+                "src": "react_labs_2.png",
+                "alt": "React Labs 2"
+            },
+            {
+                "title": "React Labs 3",
+                "src": "react_labs_3.png",
+                "alt": "React Labs 3"
+            }
         ]
     }
 ]

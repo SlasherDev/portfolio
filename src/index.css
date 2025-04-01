@@ -1,6 +1,7 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
 nav {
   display: flex;
   font-size: 3em;
@@ -8,9 +9,10 @@ nav {
   align-items: center;
   padding: 1% 80px;
   background-color: #009688;
-  color : white;
+  color: white;
   position: sticky;
-    top: 0;
+  top: 0;
+  z-index: 100;
 }
 
 a {
@@ -18,12 +20,14 @@ a {
   text-decoration: none;
 }
 
-.toCenter a{
+.toCenter a {
   margin: 1em;
 }
 
 nav .title {
+  display: flex;
   font-weight: bold;
+  align-items: center;
 }
 
 main {
@@ -42,10 +46,79 @@ main {
 .fiche {
   height: 350px;
   width: 350px;
-  background-color: #009688;
-  color: white;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  
 }
+
+.ficheName {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.projects_elements {
+  display: flex;
+}
+
+.project_info{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5% 10%;
+}
+.project_info .links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project_elements .title{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tech_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.tech_element {
+  text-align: center;
+  gap: 20px;
+}
+.screenshots{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.tech_element img {
+ width:80px;
+ margin: 5%;
+}
+.tech_name {
+ margin: 5%;
+}
+
+.screens_group{
+  display: flex;
+flex-direction: row;
+}
+.screens_element{
+ display: flex ;
+ flex-direction: column;
+}
+
