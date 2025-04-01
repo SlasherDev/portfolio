@@ -249,14 +249,14 @@
         ]
     },
     {
-        "id": "react_labs",
-        "name": "react Labs",
+        "id": "react_lab",
+        "name": "react Lab",
         "description": "Site pour experimenter React et ses fonctionnalités.",
         "urls": [
             {
                 "github": {
                     "description": "voir le depot github",
-                    "url": null
+                    "url": "react_lab"
                 }
             },
             {

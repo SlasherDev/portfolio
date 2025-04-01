@@ -19,7 +19,7 @@ function Home() {
                     <a href="https://github.com/SlasherDev" target='_blank'><FaGithub /></a>
                 </div>
                 <div className='toLeft'>
-                    <a href='#' download><Button variant="contained" sx={{ backgroundColor: '#00e2cd', borderRadius: 20, fontSize: '1.3rem' }}><IoMdDownload /> Télécharger mon CV</Button></a>
+                    <a href='./src/assets/files/cv_bryan_bosse.pdf' download><Button variant="contained" sx={{ backgroundColor: '#00e2cd', borderRadius: 20, fontSize: '1.3rem' }}><IoMdDownload /> Télécharger mon CV</Button></a>
                 </div>
             </nav>
     <main>
