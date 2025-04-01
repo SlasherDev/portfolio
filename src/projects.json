@@ -2,7 +2,7 @@
     {
         "id": "blackwell_academy",
         "name": "Blackwell Academy",
-        "description": "Site fictif pour l'université de Blackwell Academy, dans le jeu Life is Strange.",
+        "description": "Site fictif pour l'université de Blackwell Academy du jeu Life is Strange.",
         "urls": [
             {
                 "github": {
