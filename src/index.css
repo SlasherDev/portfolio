@@ -1,17 +1,21 @@
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+/* Home Page */
 nav {
   display: flex;
+  flex-wrap: wrap;
   font-size: 3em;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1% 80px;
+  padding: 1% 10%;
   background-color: #009688;
   color: white;
   position: sticky;
   top: 0;
+  text-align: center;
   z-index: 100;
 }
 
@@ -20,8 +24,23 @@ a {
   text-decoration: none;
 }
 
+.toCenter {
+  display: flex;
+  gap: 1.5em;
+}
+
+.toCenter svg {
+    width: 80px;
+    height: 80px;
+}
+
 .toCenter a {
-  margin: 1em;
+  display: flex;
+}
+
+.toRight a{
+  display: flex;
+
 }
 
 nav .title {
@@ -31,15 +50,16 @@ nav .title {
 }
 
 main {
-  margin: 3em 0;
+  margin: 2% 10%;
 }
 
 .ficheList {
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -52,7 +72,7 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  
+
 }
 
 .ficheName {
@@ -60,7 +80,9 @@ main {
   font-weight: bold;
 }
 
-p{
+/*dans le details des projets */
+
+p {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
@@ -70,55 +92,144 @@ p{
   display: flex;
 }
 
-.project_info{
+.project_info {
   display: flex;
-  justify-content: space-around;
+  gap: 20%;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 5% 10%;
 }
-.project_info .links{
+
+.project_info .links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-.project_elements .title{
+.project_elements .title {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
 
 .tech_group {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Espacement entre les éléments */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+  gap: 20px;
+  max-width: 360px; /* 3 éléments de ~120px */
 }
 
 .tech_element {
   text-align: center;
   gap: 20px;
 }
-.screenshots{
+
+.tech_element img {
+  height: 80px;
+  margin: 5%;
+}
+
+.tech_name {
+  margin: 5%;
+  font-size: 1.2em;
+}
+
+.screenshots {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
-.tech_element img {
- height:80px;
- margin: 5%;
+.screens_element_name{
+  font-weight: bold;
+  text-align: center;
 }
-.tech_name {
- margin: 5%;
-}
-
-.screens_group{
+.screens_group {
   display: flex;
-flex-direction: row;
-}
-.screens_element{
- display: flex ;
- flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
+.screens_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshots img {
+  width: 100%;
+  height: auto; 
+  max-height: 700px;
+  max-width: 1000px;
+  border-radius: 10px;
+  object-fit: contain; /* ou cover selon ce que tu veux */
+  display: block;
+  margin: auto;
+}
+
+
+
+.mobile {
+  display: none
+}
+
+@media (max-width: 800px) {
+
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none
+  }
+
+  nav {
+    padding: 2.5% ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  nav .title {
+    font-size: 60%;
+  }
+
+  .toCenter{
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech_element img {
+    height: 70px;
+  }
+
+  nav button svg{
+    width: 40px;
+    height: 40px;
+  }
+
+  nav svg{
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .screens_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tech_group {
+    margin-top: 10%;
+    max-width: none;
+  }
+}

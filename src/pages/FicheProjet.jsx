@@ -16,15 +16,14 @@ function FicheProjet() {
     <>
       <nav>
         <div className="toRight">
-          <a href="/"><div className='title'><IoIosArrowBack /> {project.name}</div></a>
+          <a href="/"><IoIosArrowBack /><div className='title'>{project.name}</div></a>
         </div>
         <div className="toCenter">
           <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" width={80} height={80} style={{ borderRadius: project.logo.form === "square" ? "15px" : "50px" }} />
         </div>
-        <div className="toLeft">
-        </div>
-      </nav>
 
+      </nav>
+      <main>
       <p>{project.description}</p>
 
       <div className="project_elements">
@@ -73,13 +72,14 @@ function FicheProjet() {
           <div className="screens_group">
             {project.screens.map((screen, index) => (
               <div className="screens_element" key={index}>
-                <div>{screen.title}</div>
-                <img src={`/assets/screens/${project.id}/${screen.src}`} alt={'screen.alt'} width={300} loading="lazy" />
+                <div className="screens_element_name">{screen.title}</div>
+                <img src={`./src/assets/screens/${project.id}/${screen.src}`} alt={screen.alt} loading="lazy" />
               </div>
             ))}
           </div>
         </div>
       </div>
+      </main>
     </>
   );
 }

@@ -2,7 +2,7 @@
     {
         "id": "blackwell_academy",
         "name": "Blackwell Academy",
-        "description": "Site fictif pour l'université de Blackwell Academy du jeu Life is Strange.",
+        "description": "Site fictif pour l'academie de Blackwell Academy du jeu Life is Strange.",
         "urls": [
             {
                 "github": {
@@ -68,19 +68,55 @@
         },
         "screens": [
             {
-                "title": "Blackwell Academy 1",
-                "src": "blackwell_academy_1.png",
-                "alt": "Blackwell Academy 1"
+                "title": "Page d'accueil",
+                "src": "blackwell_home.jpg",
+                "alt": "Page d'accueil"
             },
             {
-                "title": "Blackwell Academy 2",
-                "src": "blackwell_academy_2.png",
-                "alt": "Blackwell Academy 2"
+                "title": "Page du mot du directeur",
+                "src": "blackwell_director.jpg",
+                "alt": "Page du mot du directeur"
             },
             {
-                "title": "Blackwell Academy 3",
-                "src": "blackwell_academy_3.png",
-                "alt": "Blackwell Academy 3"
+                "title": "Page des options",
+                "src": "blackwell_options.jpg",
+                "alt": "Page des options"
+            }, 
+            {
+                "title": "Page de presentation de l'academie",
+                "src": "blackwell_visite.jpg",
+                "alt": "Page de presentation de l'academie"
+            },
+            {
+                "title": "Page du personnel",
+                "src": "blackwell_personnel.jpg",
+                "alt": "Page du personnel"
+            },
+            {
+                "title": "Page de commentaires",
+                "src": "blackwell_comm.jpg",
+                "alt": "Page de commentaires"
+            },
+            {
+                "title": "Page de contact",
+                "src": "blackwell_contact.jpg",
+                "alt": "Page de contact"
+            },
+            {
+                "title": "Page de quiz",
+                "src": "blackwell_quiz.jpg",
+                "alt": "Page de quiz"
+            },
+            {
+                "title": "Page de quiz (affiche les question)",
+                "src": "blackwell_quiz_question.jpg",
+                "alt": "Page de quiz (affiche les question)"
+            },
+            
+            {
+                "title": "Page de quiz (affiche les resultats)",
+                "src": "blackwell_quiz_result.jpg",
+                "alt": "Page de quiz (affiche les resultats)"
             }
         ]
     },
@@ -118,20 +154,41 @@
         },
         "screens": [
             {
-                "title": "Pokedex 1",
-                "src": "pokedex_1.png",
-                "alt": "Pokedex 1"
+                "title": "Liste des Pokemons",
+                "src": "pokedex_pokemonList.jpg",
+                "alt": "Liste des Pokemons"
             },
             {
-                "title": "Pokedex 2",
-                "src": "pokedex_2.png",
-                "alt": "Pokedex 2"
+                "title": "Statistiques des pokemons",
+                "src": "pokedex_pokemonDetail_stats.jpg",
+                "alt": "Statistiques des pokemons"
             },
             {
-                "title": "Pokedex 3",
-                "src": "pokedex_3.png",
-                "alt": "Pokedex 3"
+                "title": "Les sensibilités des pokemons",
+                "src": "pokedex_pokemonDetail_effectiveness.jpg",
+                "alt": "Les sensibilités des pokemons"
+            },
+            {
+                "title": "Évolutions des pokemons",
+                "src": "pokedex_pokemonDetail_evolutions.jpg",
+                "alt": "Évolutions des pokemons"
+            },
+            {
+                "title": "Les differantes formes des pokemons",
+                "src": "pokedex_pokemonDetail_forms.jpg",
+                "alt": "Les differantes formes des pokemons"
+            },
+            {
+                "title": "Les pokemons de ton équipe",
+                "src": "pokedex_pokemonTeam.jpg",
+                "alt": "Les pokemons de ton équipe"
+            },
+            {
+                "title": "Filtrage avancé",
+                "src": "pokedex_avancedFilter.jpg",
+                "alt": "Filtrage avancé"
             }
+            
         ]
     },
     {
@@ -142,7 +199,7 @@
             {
                 "github": {
                     "description": "voir le depot github",
-                    "url": "clow-card-bot"
+                    "url": "clow_card_bot"
                 }
             },
             {
@@ -199,7 +256,7 @@
             {
                 "github": {
                     "description": "voir le depot github",
-                    "url": "whatsub"
+                    "url": "Watsub"
                 }
             },
             {
