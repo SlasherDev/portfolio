@@ -232,19 +232,29 @@
         },
         "screens": [
             {
-                "title": "Clow card discord bot 1",
-                "src": "clow_card_bot_1.png",
-                "alt": "Clow card discord bot 1"
+                "title": "Les commandes du bot (cc.aide)",
+                "src": "ccb_aide.jpg",
+                "alt": "Les commandes du bot"
             },
             {
-                "title": "Clow card discord bot 2",
-                "src": "clow_card_bot_2.png",
-                "alt": "Clow card discord bot 2"
+                "title": "Les détails pour une carte",
+                "src": "ccb_detailCard.jpg",
+                "alt": "Les détails pour une carte"
             },
             {
-                "title": "Clow card discord bot 3",
-                "src": "clow_card_bot_3.png",
-                "alt": "Clow card discord bot 3"
+                "title": "La liste des cartes (partie 1)",
+                "src": "ccb_cardList_1.jpg",
+                "alt": "La liste des cartes 1"
+            },
+            {
+                "title": "La liste des cartes (partie 2)",
+                "src": "ccb_cardList_2.jpg",
+                "alt": "La liste des cartes 2"
+            },
+            {
+                "title": "La liste des cartes (partie 3)",
+                "src": "ccb_cardList_3.jpg",
+                "alt": "La liste des cartes 3"
             }
         ]
     },
@@ -280,6 +290,13 @@
                     "src": "js.png",
                     "alt": "JavaScript"
                 }
+            },
+            {
+                "name": "CSS3",
+                "img": {
+                    "src": "css.png",
+                    "alt": "CSS3"
+                }
             }
         ],
         "logo": {
@@ -289,76 +306,44 @@
         },
         "screens": [
             {
-                "title": "Whatsub 1",
-                "src": "whatsub_1.png",
-                "alt": "Whatsub 1"
+                "title": "Page de connection",
+                "src": "whatsub_login.jpg",
+                "alt": "Page de connection"
             },
             {
-                "title": "Whatsub 2",
-                "src": "whatsub_2.png",
-                "alt": "Whatsub 2"
+                "title": "Page d'incription",
+                "src": "whatsub_register.jpg",
+                "alt": "Page d'incription"
             },
             {
-                "title": "Whatsub 3",
-                "src": "whatsub_3.png",
-                "alt": "Whatsub 3"
-            }
-        ]
-    },
-    {
-        "id": "react_lab",
-        "name": "React Lab",
-        "description": "Site pour experimenter React et ses fonctionnalités.",
-        "urls": [
-            {
-                "github": {
-                    "description": "voir le depot github",
-                    "url": "react_lab"
-                }
+                "title": "Page d'accueil",
+                "src": "whatsub_home.jpg",
+                "alt": "Page d'accueil"
             },
             {
-                "link": {
-                    "description": "Visiter le site",
-                    "url": null
-                }
-            }
-        ],
-        "technologies": [
-            {
-                "name": "React",
-                "img": {
-                    "src": "react.svg",
-                    "alt": "React"
-                }
+                "title": "Page de gestion des abonnements",
+                "src": "whatsub_sublist.jpg",
+                "alt": "Page de gestion des abonnements"
             },
             {
-                "name": "JavaScript",
-                "img": {
-                    "src": "js.png",
-                    "alt": "JavaScript"
-                }
-            }
-        ],
-        "logo": {
-            "form":"square",
-            "src": "react_lab.png",
-            "alt": "React Lab"
-        },
-        "screens": [
-            {
-                "title": "React Labs",
-                "src": "react_labs.png",
-                "alt": "React Labs"
+                "title": "Page gestion de l'utilisateur",
+                "src": "whatsub_user.jpg",
+                "alt": "Page gestion de l'utilisateur"
             },
             {
-                "title": "React Labs",
-                "src": "react_labs.png",
-                "alt": "React Labs"
+                "title": "Modale de changement de mot de passe",
+                "src": "whatsub_user_changepassword.jpg",
+                "alt": "Modale de changement de mot de passe"
             },
             {
-                "title": "React Labs",
-                "src": "react_labs.png",
-                "alt": "React Labs"
+                "title": "Page d'ajout d'un abonnement",
+                "src": "whatsub_addsub.jpg",
+                "alt": "Page d'ajout d'un abonnement"
+            },
+            {
+                "title": "Modale d'ajout d'une nouvelle sous-catégorie",
+                "src": "whatsub_addsub_newsubcat.jpg",
+                "alt": "Modale d'ajout d'une nouvelle sous-catégorie"
             }
         ]
     }

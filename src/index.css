@@ -108,6 +108,10 @@ p {
   gap: 20px;
 }
 
+.links button{
+  width: 100%;
+}
+
 .project_elements .title {
   font-size: 2em;
   font-weight: bold;
