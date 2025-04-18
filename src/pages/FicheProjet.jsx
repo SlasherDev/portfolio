@@ -3,18 +3,57 @@ import { FaGithub } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowUp } from "react-icons/io";
 
 export default function FicheProjet({ project, goBack }) {
+
+    const styles ={
+        backButton:{
+             width: '1em', 
+             height: '1em', 
+             color: 'black', 
+             alignItems: 'center', 
+             fontSize: '5em', 
+             position: "relative", 
+             top: 0, left: 0, 
+             backgroundColor: "white", 
+             border: '1px solid #c0c0c0', 
+             borderRadius: "50%"
+        },
+        upButton:{
+            width: '1em', 
+            height: '1em', 
+            color: 'black', 
+            alignItems: 'center', 
+            fontSize: '5em', 
+            position: "fixed", 
+            bottom: 10, right: 10, 
+            backgroundColor: "white", 
+            border: '1px solid #c0c0c0', 
+            borderRadius: "50%"
+        },
+        projetHerder:{
+            display: 'flex', 
+            flexDirection: 'column', 
+            margin: '2em', 
+            textAlign: 'center', 
+            alignItems: 'center', 
+            gap: '1em'
+        },
+        projectName:{
+            fontWeight: 'bold', 
+            fontSize: '1.5em'
+        }
+
+    }
+
+
     return (
         <>
-            <div href="#" onClick={goBack} style={{ display: 'flex', justifyContent: 'space-evenly', }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1em' }}>
-                    <IoIosArrowBack style={{ fontSize: '2em' }} />
-                    <div style={{ fontWeight: 'bold', fontSize: '2em' }}>{project.name}</div>
-                </div>
-                <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" width={80} height={80} style={{ borderRadius: project.logo.form === "square" ? "15px" : "50px" }} />
-            </div>
-
-            <div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '2em' }}>
+            <Button onClick={goBack} href="#" variant="contained" style={styles.backButton}>
+                <IoIosArrowBack />
+            </Button>
+            <div >
+                <div style={styles.projetHerder} >
+                    <div  style={styles.projectName}>{project.name}</div>
+                    <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" width={80} height={80} style={{ borderRadius: project.logo.form === "square" ? "15px" : "50px" }} />
                 </div>
                 <p>{project.description}</p>
                 <div className="project_elements">
@@ -61,9 +100,9 @@ export default function FicheProjet({ project, goBack }) {
                         </div>
                     </div>
                 </div>
-                <a href="#">
-                <IoIosArrowUp style={{ color: 'black', cursor: 'pointer', alignItems:'center', fontSize: '5em', position:"fixed", bottom:10, right:10, backgroundColor:"white",border:'2px solid #c0c0c0', borderRadius:"50%" }} />
-                </a>
+                <Button href="#" variant="contained" style={styles.upButton}>
+                    <IoIosArrowUp />
+                </Button>
             </div>
         </>
     );
