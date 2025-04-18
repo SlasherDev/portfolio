@@ -26,7 +26,7 @@ a {
 
 .toCenter {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .toCenter svg {
@@ -219,11 +219,10 @@ p {
     height: 40px;
   }
 
-  nav svg{
+  .toCenter svg{
     width: 60px;
     height: 60px;
   }
-
 
   .screens_element {
     display: flex;

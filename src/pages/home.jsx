@@ -34,9 +34,11 @@ export default function Home() {
           <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white', fontSize: '3em' }} />}>
             <Typography sx={{ fontSize: '3em', fontWeight: 'bold' }}>SlasherDev</Typography>
           </AccordionSummary>
-          <AccordionDetails sx={{ justifyContent: 'center', gap: '2em' }}>
-            <a href="https://www.linkedin.com/in/bryan-bosse/" target='_blank'><FaLinkedin /></a>
-            <a href="https://github.com/SlasherDev" target='_blank'><FaGithub /></a>
+          <AccordionDetails sx={{}}>
+            <div className='toCenter'>
+              <a href="https://www.linkedin.com/in/bryan-bosse/" target='_blank'>< FaLinkedin /></a>
+              <a href="https://github.com/SlasherDev" target='_blank'><FaGithub /></a>
+            </div>
           </AccordionDetails>
           <AccordionDetails sx={{ justifyContent: 'center' }}>
             <a href='./src/assets/files/cv_bryan_bosse.pdf' download>
