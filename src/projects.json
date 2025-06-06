@@ -346,5 +346,70 @@
                 "alt": "Modale d'ajout d'une nouvelle sous-catégorie"
             }
         ]
+    },
+    {
+        "id": "ec_lexique",
+        "name": "Etudes et Chantiers - Lexique des outils techniques",
+        "description": "Application à visée pédagogique du vocabulaire des outils utilisé sur les chantiers d'Etudes et Chantiers.",
+        "urls": [
+            {
+                "github": {
+                    "description": "voir le depot github",
+                    "url": "https://github.com/SlasherDev/ECLexique"
+                }
+            },
+            {
+                "link": {
+                    "description": "Visiter le site",
+                    "url": "https://lexique-ec-ouest.netlify.app/"
+                }
+            }
+        ],
+        "technologies": [
+            {
+                "name": "React",
+                "img": {
+                    "src": "react.svg",
+                    "alt": "React"
+                }
+            },
+            {
+                "name": "JavaScript",
+                "img": {
+                    "src": "js.png",
+                    "alt": "JavaScript"
+                }
+            },
+            {
+                "name": "CSS3",
+                "img": {
+                    "src": "css.png",
+                    "alt": "CSS3"
+                }
+            }
+        ],
+        "logo": {
+            "form":"rect",
+            "src": "logo_ec.jpg",
+            "alt": "Etudes et Chantiers"
+        },
+        "screens": [
+            {
+                "title": "Haut de la page avec la barre de recherche",
+                "src": "ec_home.jpg",
+                "alt": "haut de la page avec la barre de recherche"
+            },
+            {
+                "title": "Liste des Outils",
+                "src": "ec_list.jpg",
+                "alt": "liste des Outils"
+            },
+            {
+                "title": "Détail d'un outil",
+                "src": "ec_detail_outil.jpg",
+                "alt": "détail d'un outil"
+            }
+
+        ]
     }
 ]

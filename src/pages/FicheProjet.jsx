@@ -47,13 +47,15 @@ export default function FicheProjet({ project, goBack }) {
 
     return (
         <>
-            <Button onClick={goBack} href="#" variant="contained" style={styles.backButton}>
+            <Button onClick={goBack} variant="contained" style={styles.backButton}>
                 <IoIosArrowBack />
             </Button>
             <div >
                 <div style={styles.projetHerder} >
                     <div  style={styles.projectName}>{project.name}</div>
-                    <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" width={80} height={80} style={{ borderRadius: project.logo.form === "square" ? "15px" : "50px" }} />
+                    <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" style={{ borderRadius: project.logo.form === "square" || project.logo.form === "rect" ? "15px" : "50px",
+                                                                                                                            width: project.logo.form === "square" || project.logo.form === "round" ? "80px" : "200px",
+                                                                                                                            height: project.logo.form === "square" || project.logo.form === "round" ? "80px" : null}} />
                 </div>
                 <p>{project.description}</p>
                 <div className="project_elements">
@@ -100,7 +102,7 @@ export default function FicheProjet({ project, goBack }) {
                         </div>
                     </div>
                 </div>
-                <Button href="#" variant="contained" style={styles.upButton}>
+                <Button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} variant="contained" style={styles.upButton}>
                     <IoIosArrowUp />
                 </Button>
             </div>
