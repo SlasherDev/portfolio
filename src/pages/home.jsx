@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Accordion, AccordionDetails, AccordionSummary, Button, Typography } from "@mui/material";
-import { IoMdDownload } from "react-icons/io";
+import { Button} from "@mui/material";
+import { TbFileCv } from "react-icons/tb";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import projects from "../projects.json";
 import FicheProjet from './FicheProjet';
 
@@ -11,44 +10,43 @@ export default function Home() {
 
     return (
         <>
-            {/* Navigation Desktop et Mobile */}
-            <nav className="desktop">
-                <div className='toRight'>
-                    <a href="/"><div className='title'>SlasherDev</div></a>
-                </div>
-                <div className='toCenter'>
-                    <a href="https://www.linkedin.com/in/bryan-bosse/" target='_blank'>< FaLinkedin /></a>
-                    <a href="https://github.com/SlasherDev" target='_blank'><FaGithub /></a>
-                </div>
-                <div className='toLeft'>
-                    <a href='./src/assets/files/cv_bryan_bosse.pdf' download>
-                        <Button variant="contained" style={{ backgroundColor: '#00e2cd', borderRadius: 30, fontSize: '1.3rem' }}>
-                            <IoMdDownload /> Télécharger mon CV
-                        </Button>
-                    </a>
-                </div>
-            </nav>
+           <nav className="navbar navbar-expand-lg navbar-dark bg-teal">
+  <div className="container-fluid">
+    {/* Logo (toujours à gauche) */}
+    <a className="navbar-brand title" href="/">SlasherDev</a>
 
-            <nav className="mobile">
-                <Accordion sx={{ backgroundColor: '#009688', color: 'white', boxShadow: 'none' }}>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white', fontSize: '3em' }} />}>
-                        <Typography sx={{ fontSize: '3em', fontWeight: 'bold' }}>SlasherDev</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{}}>
-                        <div className='toCenter'>
-                            <a href="https://www.linkedin.com/in/bryan-bosse/" target='_blank'>< FaLinkedin /></a>
-                            <a href="https://github.com/SlasherDev" target='_blank'><FaGithub /></a>
-                        </div>
-                    </AccordionDetails>
-                    <AccordionDetails sx={{ justifyContent: 'center' }}>
-                        <a href='./src/assets/files/cv_bryan_bosse.pdf' download>
-                            <Button variant="contained" sx={{ backgroundColor: '#00e2cd', borderRadius: 20, fontSize: '0.9rem', width: '90%' }}>
-                                <IoMdDownload /> Télécharger mon CV
-                            </Button>
-                        </a>
-                    </AccordionDetails>
-                </Accordion>
-            </nav>
+    {/* Burger button (déjà à droite par défaut avec Bootstrap) */}
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    {/* Navbar Links */}
+    <div className="collapse navbar-collapse" id="navbarContent">
+      <ul className="navbar-nav mx-auto mb-2 justify-content-center align-items-center">
+        {/* Social Links */}
+        <li className="nav-item mx-2">
+          <a className="nav-link" href="https://www.linkedin.com/in/bryan-bosse/" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+        </li>
+        <li className="nav-item mx-2">
+          <a className="nav-link" href="https://github.com/SlasherDev" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+        </li>
+      </ul>
+
+      {/* Button CV */}
+      <div>
+        <Button href='/cv' target='_blank' variant="contained" style={{ backgroundColor: '#00e2cd', borderRadius: 30, fontSize: '1.3rem' }}>
+          <TbFileCv /> Consulter mon CV
+        </Button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
 
             <main>
                 {selectedProject ? (
@@ -63,9 +61,11 @@ export default function Home() {
                                 className="fiche"
                                 onClick={() => setSelectedProject(project)}
                             >
-                                <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" style={{ borderRadius: project.logo.form === "square" || project.logo.form === "rect" ? "15px" : "50px",
-                                                                                                                                        width: project.logo.form === "square" || project.logo.form === "round" ? "80px" : "150px",
-                                                                                                                                        height: project.logo.form === "square" || project.logo.form === "round" ? "80px" : null}} />
+                                <img src={`./src/assets/logos/${project.logo.src}`} alt={project.logo.alt} className="logo" style={{
+                                    borderRadius: project.logo.form === "square" || project.logo.form === "rect" ? "15px" : "50px",
+                                    width: project.logo.form === "square" || project.logo.form === "round" ? "80px" : "150px",
+                                    height: project.logo.form === "square" || project.logo.form === "round" ? "80px" : null
+                                }} />
                                 <div className="ficheName">{project.name}</div>
                             </Button>
                         ))}

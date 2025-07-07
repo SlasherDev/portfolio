@@ -381,6 +381,13 @@
                 }
             },
             {
+                "name": "HTML5",
+                "img": {
+                    "src": "html.png",
+                    "alt": "HTML5"
+                }
+            },
+            {
                 "name": "CSS3",
                 "img": {
                     "src": "css.png",

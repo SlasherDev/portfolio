@@ -44,9 +44,15 @@ a {
 }
 
 nav .title {
+  font-size: .7em;
   display: flex;
   font-weight: bold;
   align-items: center;
+}
+
+nav svg {
+  opacity: 1 !important;
+  color: #ffffff; /* Facultatif : couleur blanche pour s'assurer qu'elles ressortent */
 }
 
 main {
@@ -199,10 +205,6 @@ p {
     flex-direction: column;
     gap: 10px;
     align-items: stretch;
-  }
-
-  nav .title {
-    font-size: 60%;
   }
 
   .toCenter{
